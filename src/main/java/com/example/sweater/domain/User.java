@@ -12,7 +12,7 @@ import java.util.Set;
 public class User implements UserDetails {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    private long id;
     private String username;
     private String password;
     private boolean active;
@@ -22,7 +22,7 @@ public class User implements UserDetails {
     @Enumerated(EnumType.STRING)
     private Set<Role> roles;
 
-    public Long getId() {
+    public long getId() {
         return id;
     }
 
